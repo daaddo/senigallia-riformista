@@ -1,0 +1,98 @@
+.candidate-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.candidate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-purple-light);
+}
+
+.candidate-card__media {
+  aspect-ratio: 3 / 4;
+  background-color: #eef0f6;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--color-blue);
+}
+
+.candidate-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.candidate-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(
+    160deg,
+    var(--color-blue) 0%,
+    var(--color-purple) 55%,
+    var(--color-magenta) 100%
+  );
+  color: var(--color-white);
+  text-align: center;
+  padding: 16px;
+}
+
+.candidate-card__initials {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.candidate-card__placeholder-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+.candidate-card__body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.candidate-card__role {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-magenta);
+  margin: 0 0 4px 0;
+}
+
+.candidate-card__name {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.005em;
+}
+
+.candidate-card__bio {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.55;
+}
