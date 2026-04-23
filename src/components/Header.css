@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  height: 76px;
+  height: var(--header-height);
 }
 
 .site-header__brand {
@@ -98,8 +98,8 @@
 }
 
 @media (max-width: 600px) {
-  .site-header__inner {
-    height: 68px;
+  :root {
+    --header-height: 68px;
   }
 
   .site-header__brand-top {

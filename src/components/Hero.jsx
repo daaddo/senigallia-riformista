@@ -1,4 +1,4 @@
-import logo from "../assets/logo-senigallia-riformista.svg";
+import logo from "../assets/logo-senigallia-riformista.png";
 import "./Hero.css";
 
 function Hero() {
@@ -12,11 +12,16 @@ function Hero() {
               Senigallia Riformista
             </h1>
             <p className="hero__subtitle">
-              Elezioni amministrative - 24 e 25 maggio 2026
+              Elezioni amministrative &mdash; 24 e 25 maggio 2026
+            </p>
+            <p className="hero__signature">
+              <span className="hero__signature-name">Dario Romano</span>
+              <span className="hero__signature-role">Candidato Sindaco</span>
             </p>
           </div>
 
           <div className="hero__logo-wrap">
+            <span className="hero__logo-halo" aria-hidden="true" />
             <img
               src={logo}
               alt="Logo Progetto Senigallia Riformista"
@@ -28,17 +33,22 @@ function Hero() {
 
       <svg
         className="hero__wave"
-        viewBox="0 0 1440 140"
+        viewBox="0 0 1440 120"
         preserveAspectRatio="none"
         aria-hidden="true"
       >
         <path
-          d="M0,80 C240,10 480,130 720,70 C960,10 1200,110 1440,60 L1440,140 L0,140 Z"
-          fill="var(--color-purple)"
-          opacity="0.85"
+          d="M0,30 C220,-10 460,70 720,30 C980,-10 1220,60 1440,20 L1440,120 L0,120 Z"
+          fill="var(--color-purple-light)"
+          opacity="0.9"
         />
         <path
-          d="M0,110 C240,60 520,150 780,100 C1040,50 1260,130 1440,100 L1440,140 L0,140 Z"
+          d="M0,55 C220,15 480,95 740,55 C1000,15 1220,75 1440,50 L1440,120 L0,120 Z"
+          fill="var(--color-purple)"
+          opacity="0.95"
+        />
+        <path
+          d="M0,85 C240,50 520,115 780,85 C1040,55 1260,100 1440,85 L1440,120 L0,120 Z"
           fill="var(--color-magenta)"
         />
       </svg>

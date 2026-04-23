@@ -1,12 +1,13 @@
 :root {
-  /* Palette istituzionale - tratta dalla locandina */
-  --color-blue: #2e4b9e;
-  --color-blue-dark: #223a80;
+  /* Palette istituzionale - colori estratti dal logo */
+  --color-blue: #405bac;
+  --color-blue-dark: #2e4488;
   --color-accent-blue: #2f66d9;
-  --color-purple: #9788bd;
-  --color-purple-light: #b9aed6;
-  --color-magenta: #b03a60;
-  --color-magenta-dark: #8e2e4d;
+  --color-purple: #a17fcf;
+  --color-purple-light: #ccb1e7;
+  --color-magenta: #ab3863;
+  --color-magenta-dark: #8a2c4f;
+  --color-accent-ochre: #ebb062;
 
   --color-white: #ffffff;
   --color-bg: #fafafb;
@@ -14,6 +15,8 @@
   --color-text: #1a1d2b;
   --color-text-muted: #5a6073;
   --color-border: #e4e6ee;
+
+  --header-height: 76px;
 
   --radius-sm: 4px;
   --radius-md: 8px;
