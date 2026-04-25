@@ -33,6 +33,27 @@
   flex-shrink: 0;
 }
 
+.site-header__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.site-header__brand-top {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.site-header__brand-bottom {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+  letter-spacing: -0.01em;
+}
+
 .site-header__nav ul {
   display: flex;
   gap: 8px;
@@ -69,5 +90,9 @@
 
   .site-header__logo {
     height: 40px;
+  }
+
+  .site-header__brand-text {
+    display: none;
   }
 }

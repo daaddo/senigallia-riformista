@@ -25,6 +25,12 @@ function Header() {
             alt="Logo Progetto Senigallia Riformista"
             className="site-header__logo"
           />
+          <span className="site-header__brand-text">
+            <span className="site-header__brand-top">Progetto</span>
+            <span className="site-header__brand-bottom">
+              Senigallia Riformista
+            </span>
+          </span>
         </Link>
 
         <nav
