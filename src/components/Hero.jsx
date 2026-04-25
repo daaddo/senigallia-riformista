@@ -14,10 +14,6 @@ function Hero() {
             <p className="hero__subtitle">
               Elezioni amministrative &mdash; 24 e 25 maggio 2026
             </p>
-            <p className="hero__signature">
-              <span className="hero__signature-name">Dario Romano</span>
-              <span className="hero__signature-role">Candidato Sindaco</span>
-            </p>
           </div>
 
           <div className="hero__logo-wrap">
