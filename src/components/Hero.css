@@ -123,6 +123,13 @@
   text-wrap: pretty;
 }
 
+@media (min-width: 901px) {
+  .hero__description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+}
+
 .hero__signature {
   display: inline-flex;
   flex-direction: column;
