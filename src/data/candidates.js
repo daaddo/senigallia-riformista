@@ -8,7 +8,7 @@ export const mayorCandidate = {
   role: "Candidato Sindaco",
   birthplace: "",
   birthdate: "",
-  bio: "Candidato Sindaco della coalizione Progetto Senigallia Riformista per le elezioni amministrative del 24 e 25 maggio 2026.",
+  bio: "Candidato Sindaco della coalizione Progetto Senigallia Riformista per le elezioni amministrative del 24 e 25 maggio 2026. ",
   imageUrl: null,
   casellarioUrl: null,
 };
