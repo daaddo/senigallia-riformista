@@ -279,12 +279,17 @@
   }
 
   .hero__logo {
-    max-width: 420px;
-    max-height: 44vh;
+    max-width: 260px;
+    max-height: 30vh;
   }
 
   .hero__band--blue {
-    padding: 48px 0 80px;
+    padding: 32px 0 72px;
+    align-items: flex-start;
+  }
+
+  .hero__text {
+    padding-top: 0;
   }
 
   .hero__wave {
@@ -308,8 +313,8 @@
   }
 
   .hero__logo {
-    max-width: 370px;
-    max-height: 40vh;
+    max-width: 220px;
+    max-height: 26vh;
   }
 
   .hero__eyebrow {

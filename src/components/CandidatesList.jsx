@@ -1,8 +1,5 @@
 import CandidateCard from "./CandidateCard.jsx";
-import {
-  mayorCandidate,
-  councilCandidates,
-} from "../data/candidates.js";
+import { councilCandidates } from "../data/candidates.js";
 import "./CandidatesList.css";
 
 function CandidatesList() {
@@ -23,21 +20,6 @@ function CandidatesList() {
             candidate e i candidati che si mettono al servizio della citta'.
           </p>
         </header>
-
-        <div className="candidates__group">
-          <p className="candidates__group-label">Candidato Sindaco</p>
-          <ul className="candidates__grid candidates__grid--mayor" role="list">
-            <li className="candidates__item candidates__item--featured">
-              <CandidateCard
-                slug={mayorCandidate.slug}
-                name={mayorCandidate.name}
-                role={mayorCandidate.role}
-                bio={mayorCandidate.bio}
-                imageUrl={mayorCandidate.imageUrl}
-              />
-            </li>
-          </ul>
-        </div>
 
         <div className="candidates__group">
           <p className="candidates__group-label">
