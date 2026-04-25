@@ -1,34 +1,76 @@
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  const { pathname, hash } = useLocation();
+  const isHome = pathname === "/";
+
+  const navItems = [
+    { to: "/", label: "Home", hash: "" },
+    { to: "/#candidati", label: "Candidati", hash: "#candidati" },
+    { to: "/#programma", label: "Programma", hash: "#programma" },
+  ];
+
   return (
     <header className="site-header" role="banner">
       <div className="container site-header__inner">
-        <a className="site-header__brand" href="#home" aria-label="Torna alla home">
-          <span className="site-header__mark" aria-hidden="true">PSR</span>
+        <Link
+          to="/"
+          className="site-header__brand"
+          aria-label="Torna alla home"
+        >
+          <span className="site-header__mark" aria-hidden="true">
+            PSR
+          </span>
           <span className="site-header__brand-text">
             <span className="site-header__brand-top">Progetto</span>
-            <span className="site-header__brand-bottom">Senigallia Riformista</span>
+            <span className="site-header__brand-bottom">
+              Senigallia Riformista
+            </span>
           </span>
-        </a>
+        </Link>
 
-        <nav className="site-header__nav" aria-label="Navigazione principale">
+        <nav
+          className="site-header__nav"
+          aria-label="Navigazione principale"
+        >
           <ul>
-            <li>
-              <a href="#home" className="site-header__link is-active">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#candidati" className="site-header__link">
-                Candidati
-              </a>
-            </li>
-            <li>
-              <a href="#programma" className="site-header__link">
-                Programma
-              </a>
-            </li>
+            {navItems.map((item) => {
+              const isActive = item.hash
+                ? isHome && hash === item.hash
+                : isHome && !hash;
+
+              if (item.hash) {
+                return (
+                  <li key={item.label}>
+                    <Link
+                      to={item.to}
+                      className={`site-header__link${
+                        isActive ? " is-active" : ""
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              }
+
+              return (
+                <li key={item.label}>
+                  <NavLink
+                    to={item.to}
+                    end
+                    className={({ isActive: routeActive }) =>
+                      `site-header__link${
+                        routeActive && !hash ? " is-active" : ""
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CandidateCard.css";
 
 function getInitials(name) {
@@ -10,9 +11,13 @@ function getInitials(name) {
     .join("");
 }
 
-function CandidateCard({ name, role, bio, imageUrl }) {
+function CandidateCard({ slug, name, role, bio, imageUrl }) {
   return (
-    <article className="candidate-card">
+    <Link
+      to={`/candidati/${slug}`}
+      className="candidate-card"
+      aria-label={`Scopri il profilo di ${name}`}
+    >
       <div className="candidate-card__media">
         {imageUrl ? (
           <img
@@ -29,7 +34,7 @@ function CandidateCard({ name, role, bio, imageUrl }) {
           >
             <span className="candidate-card__initials">{getInitials(name)}</span>
             <span className="candidate-card__placeholder-label">
-              Foto non disponibile
+              Foto in arrivo
             </span>
           </div>
         )}
@@ -39,8 +44,12 @@ function CandidateCard({ name, role, bio, imageUrl }) {
         {role ? <p className="candidate-card__role">{role}</p> : null}
         <h3 className="candidate-card__name">{name}</h3>
         {bio ? <p className="candidate-card__bio">{bio}</p> : null}
+        <span className="candidate-card__cta" aria-hidden="true">
+          Leggi il profilo
+          <span className="candidate-card__cta-arrow">&rarr;</span>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }
 

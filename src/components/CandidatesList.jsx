@@ -1,60 +1,17 @@
 import CandidateCard from "./CandidateCard.jsx";
+import {
+  mayorCandidate,
+  councilCandidates,
+} from "../data/candidates.js";
 import "./CandidatesList.css";
-
-const candidates = [
-  {
-    id: 1,
-    name: "Dario Romano",
-    role: "Candidato Sindaco",
-    bio: "Guida della coalizione riformista per la citta di Senigallia.",
-  },
-  {
-    id: 2,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 3,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 4,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 5,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 6,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 7,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-  {
-    id: 8,
-    name: "Nome Cognome",
-    role: "Candidato Consigliere",
-    bio: "Breve biografia del candidato. Esperienza, competenze e impegno per la citta.",
-  },
-];
 
 function CandidatesList() {
   return (
-    <section className="candidates" id="candidati" aria-labelledby="candidates-title">
+    <section
+      className="candidates"
+      id="candidati"
+      aria-labelledby="candidates-title"
+    >
       <div className="container">
         <header className="candidates__header">
           <p className="eyebrow">I candidati della lista</p>
@@ -63,22 +20,43 @@ function CandidatesList() {
           </h2>
           <p className="candidates__intro">
             Una squadra plurale, competente e radicata nel territorio. Conosci le
-            candidate e i candidati che si mettono al servizio della citta.
+            candidate e i candidati che si mettono al servizio della citta'.
           </p>
         </header>
 
-        <ul className="candidates__grid" role="list">
-          {candidates.map((candidate) => (
-            <li key={candidate.id} className="candidates__item">
+        <div className="candidates__group">
+          <p className="candidates__group-label">Candidato Sindaco</p>
+          <ul className="candidates__grid candidates__grid--mayor" role="list">
+            <li className="candidates__item candidates__item--featured">
               <CandidateCard
-                name={candidate.name}
-                role={candidate.role}
-                bio={candidate.bio}
-                imageUrl={candidate.imageUrl}
+                slug={mayorCandidate.slug}
+                name={mayorCandidate.name}
+                role={mayorCandidate.role}
+                bio={mayorCandidate.bio}
+                imageUrl={mayorCandidate.imageUrl}
               />
             </li>
-          ))}
-        </ul>
+          </ul>
+        </div>
+
+        <div className="candidates__group">
+          <p className="candidates__group-label">
+            Candidate e candidati al Consiglio Comunale
+          </p>
+          <ul className="candidates__grid" role="list">
+            {councilCandidates.map((candidate) => (
+              <li key={candidate.slug} className="candidates__item">
+                <CandidateCard
+                  slug={candidate.slug}
+                  name={candidate.name}
+                  role={candidate.role}
+                  bio={candidate.bio}
+                  imageUrl={candidate.imageUrl}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

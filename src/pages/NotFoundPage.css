@@ -1,0 +1,38 @@
+.not-found {
+  padding: 120px 0 160px;
+  text-align: center;
+  background-color: var(--color-bg);
+  flex: 1;
+}
+
+.not-found__inner {
+  max-width: 640px;
+}
+
+.not-found__title {
+  color: var(--color-blue-dark);
+  margin: 0 0 16px 0;
+}
+
+.not-found__text {
+  color: var(--color-text-muted);
+  margin: 0 0 32px 0;
+}
+
+.not-found__link {
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 12px 28px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease;
+}
+
+.not-found__link:hover {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+}
