@@ -1,9 +1,6 @@
 .hero {
   position: relative;
-  overflow: hidden;
   color: var(--color-white);
-  height: calc(100vh - var(--header-height));
-  height: calc(100dvh - var(--header-height));
   display: flex;
   flex-direction: column;
   background-color: var(--color-blue);
@@ -15,12 +12,9 @@
 
 .hero__band--blue {
   background-color: var(--color-blue);
-  flex: 1 1 0;
-  min-height: 0;
   display: flex;
   align-items: center;
-  padding: 32px 0 56px;
-  overflow: hidden;
+  padding: 64px 0 80px;
 }
 
 .hero__band--blue::before {
@@ -244,14 +238,8 @@
 }
 
 @media (max-width: 900px) {
-  .hero {
-    height: auto;
-    min-height: calc(100vh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
-  }
-
   .hero__band--blue {
-    padding: 40px 0 72px;
+    padding: 48px 0 80px;
   }
 
   .hero__wave {

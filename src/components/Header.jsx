@@ -7,7 +7,7 @@ function Header() {
 
   const navItems = [
     { to: "/", label: "Home", hash: "" },
-    { to: "/#candidati", label: "Candidati", hash: "#candidati" },
+    { to: "/candidati", label: "Candidati", hash: "" },
     { to: "/#programma", label: "Programma", hash: "#programma" },
   ];
 
@@ -35,42 +35,32 @@ function Header() {
           aria-label="Navigazione principale"
         >
           <ul>
-            {navItems.map((item) => {
-              const isActive = item.hash
-                ? isHome && hash === item.hash
-                : isHome && !hash;
-
-              if (item.hash) {
-                return (
-                  <li key={item.label}>
-                    <Link
-                      to={item.to}
-                      className={`site-header__link${
-                        isActive ? " is-active" : ""
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                );
-              }
-
-              return (
+            {navItems.map((item) =>
+              item.hash ? (
+                <li key={item.label}>
+                  <Link
+                    to={item.to}
+                    className={`site-header__link${
+                      isHome && hash === item.hash ? " is-active" : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ) : (
                 <li key={item.label}>
                   <NavLink
                     to={item.to}
                     end
                     className={({ isActive: routeActive }) =>
-                      `site-header__link${
-                        routeActive && !hash ? " is-active" : ""
-                      }`
+                      `site-header__link${routeActive ? " is-active" : ""}`
                     }
                   >
                     {item.label}
                   </NavLink>
                 </li>
-              );
-            })}
+              )
+            )}
           </ul>
         </nav>
       </div>

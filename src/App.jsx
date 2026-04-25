@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import CandidatesPage from "./pages/CandidatesPage.jsx";
 import CandidatePage from "./pages/CandidatePage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
       <main id="main" className="main">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/candidati" element={<CandidatesPage />} />
           <Route path="/candidati/:slug" element={<CandidatePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

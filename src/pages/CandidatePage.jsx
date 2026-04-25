@@ -41,7 +41,7 @@ function CandidatePage() {
           >
             <Link to="/">Home</Link>
             <span aria-hidden="true">/</span>
-            <Link to="/#candidati">Candidati</Link>
+            <Link to="/candidati">Candidati</Link>
             <span aria-hidden="true">/</span>
             <span className="candidate-page__breadcrumb-current">
               {candidate.name}
@@ -109,7 +109,7 @@ function CandidatePage() {
                     Apri Casellario Giudiziario
                   </button>
                 ) : null}
-                <Link to="/#candidati" className="candidate-page__back">
+                <Link to="/candidati" className="candidate-page__back">
                   Torna all&apos;elenco
                 </Link>
               </div>
