@@ -26,7 +26,7 @@ function CandidatesList() {
             Candidate e candidati al Consiglio Comunale
           </p>
           <ul className="candidates__grid" role="list">
-            {councilCandidates.map((candidate) => (
+            {councilCandidates.map((candidate, index) => (
               <li key={candidate.slug} className="candidates__item">
                 <CandidateCard
                   slug={candidate.slug}
@@ -34,6 +34,7 @@ function CandidatesList() {
                   role={candidate.role}
                   bio={candidate.bio}
                   imageUrl={candidate.imageUrl}
+                  priority={index < 6}
                 />
               </li>
             ))}

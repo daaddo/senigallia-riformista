@@ -1,4 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/logo-senigallia-riformista.png";
 import "./Header.css";
 
 function Header() {
@@ -19,15 +20,11 @@ function Header() {
           className="site-header__brand"
           aria-label="Torna alla home"
         >
-          <span className="site-header__mark" aria-hidden="true">
-            PSR
-          </span>
-          <span className="site-header__brand-text">
-            <span className="site-header__brand-top">Progetto</span>
-            <span className="site-header__brand-bottom">
-              Senigallia Riformista
-            </span>
-          </span>
+          <img
+            src={logo}
+            alt="Logo Progetto Senigallia Riformista"
+            className="site-header__logo"
+          />
         </Link>
 
         <nav

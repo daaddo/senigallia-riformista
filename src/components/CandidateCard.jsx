@@ -11,7 +11,7 @@ function getInitials(name) {
     .join("");
 }
 
-function CandidateCard({ slug, name, role, bio, imageUrl }) {
+function CandidateCard({ slug, name, role, bio, imageUrl, priority = false }) {
   return (
     <Link
       to={`/candidati/${slug}`}
@@ -24,7 +24,8 @@ function CandidateCard({ slug, name, role, bio, imageUrl }) {
             src={imageUrl}
             alt={`Fotografia di ${name}`}
             className="candidate-card__photo"
-            loading="lazy"
+            loading={priority ? "eager" : "lazy"}
+            fetchpriority={priority ? "high" : "auto"}
           />
         ) : (
           <div

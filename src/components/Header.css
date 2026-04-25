@@ -26,46 +26,11 @@
   color: var(--color-text);
 }
 
-.site-header__mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    var(--color-blue) 0%,
-    var(--color-blue) 45%,
-    var(--color-purple) 55%,
-    var(--color-magenta) 100%
-  );
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: 0.8125rem;
-  letter-spacing: 0.05em;
+.site-header__logo {
+  height: 48px;
+  width: auto;
+  display: block;
   flex-shrink: 0;
-}
-
-.site-header__brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.site-header__brand-top {
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  font-weight: 600;
-}
-
-.site-header__brand-bottom {
-  font-size: 1.0625rem;
-  font-weight: 700;
-  color: var(--color-blue-dark);
-  letter-spacing: -0.01em;
 }
 
 .site-header__nav ul {
@@ -102,11 +67,7 @@
     --header-height: 68px;
   }
 
-  .site-header__brand-top {
-    font-size: 0.6875rem;
-  }
-
-  .site-header__brand-bottom {
-    font-size: 0.9375rem;
+  .site-header__logo {
+    height: 40px;
   }
 }
