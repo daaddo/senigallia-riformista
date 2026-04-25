@@ -37,6 +37,10 @@
   max-width: 380px;
 }
 
+.site-footer__social {
+  margin-top: 20px;
+}
+
 .site-footer__meta {
   text-align: right;
   color: rgba(255, 255, 255, 0.75);

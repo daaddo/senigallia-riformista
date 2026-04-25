@@ -1,4 +1,5 @@
 import logo from "../assets/logo-senigallia-riformista.png";
+import SocialLinks from "./SocialLinks.jsx";
 import "./Hero.css";
 
 function Hero() {
@@ -14,6 +15,7 @@ function Hero() {
             <p className="hero__subtitle">
               Elezioni amministrative &mdash; 24 e 25 maggio 2026
             </p>
+            <SocialLinks variant="hero" />
           </div>
 
           <div className="hero__logo-wrap">

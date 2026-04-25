@@ -1,3 +1,4 @@
+import SocialLinks from "./SocialLinks.jsx";
 import "./Footer.css";
 
 function Footer() {
@@ -12,6 +13,7 @@ function Footer() {
           <p className="site-footer__tagline">
             Elezioni amministrative - 24 e 25 maggio 2026
           </p>
+          <SocialLinks variant="footer" className="site-footer__social" />
         </div>
 
         <div className="site-footer__meta">
