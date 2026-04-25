@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CandidatesPage from "./pages/CandidatesPage.jsx";
 import CandidatePage from "./pages/CandidatePage.jsx";
+import ProgrammaPage from "./pages/ProgrammaPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import "./App.css";
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/candidati" element={<CandidatesPage />} />
           <Route path="/candidati/:slug" element={<CandidatePage />} />
+          <Route path="/programma" element={<ProgrammaPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

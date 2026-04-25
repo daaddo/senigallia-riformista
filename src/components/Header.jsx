@@ -8,7 +8,7 @@ function Header() {
   const navItems = [
     { to: "/", label: "Home", hash: "" },
     { to: "/candidati", label: "Candidati", hash: "" },
-    { to: "/#programma", label: "Programma", hash: "#programma" },
+    { to: "/programma", label: "Programma", hash: "" },
   ];
 
   return (
