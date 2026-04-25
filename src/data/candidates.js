@@ -2,6 +2,10 @@
 // I dati biografici provengono dai curricula depositati.
 // La lista dei consiglieri e' ordinata alfabeticamente per cognome.
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const foto = (filename) => `${base}/customassets/foto/${filename}`;
+const cg = (filename) => `${base}/customassets/cg/${filename}`;
+
 export const mayorCandidate = {
   slug: "dario-romano",
   name: "Dario Romano",
@@ -21,8 +25,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "01/02/1966",
     bio: "Programmatore elettronico di macchine tessili in primarie aziende del settore. Recentemente e' attivo nel settore metalmeccanico. Ha maturato esperienze come guardia giurata e come guardia parco, oltre al volontariato nei vigili del fuoco.",
-    imageUrl: "/customassets/foto/maurizio_angeloni_baldoni.png",
-    casellarioUrl: "/customassets/cg/Casellario Angeloni Baldoni.pdf",
+    imageUrl: foto("maurizio_angeloni_baldoni.png"),
+    casellarioUrl: cg("Casellario Angeloni Baldoni.pdf"),
   },
   {
     slug: "dogony-bakayoko",
@@ -31,8 +35,8 @@ export const councilCandidates = [
     birthplace: "Bouake (Costa d'Avorio - ES)",
     birthdate: "27/09/1964",
     bio: "Italiana e ivoriana, integrata nel territorio senigalliese da oltre trent'anni, svolge la professione di assistente familiare. Plurilingue (italiano e francese), e' dotata di carattere generoso, empatico e paziente.",
-    imageUrl: "/customassets/foto/dogony_bakayoko.png",
-    casellarioUrl: "/customassets/cg/Casellario Bakayoko.pdf",
+    imageUrl: foto("dogony_bakayoko.png"),
+    casellarioUrl: cg("Casellario Bakayoko.pdf"),
   },
   {
     slug: "vladlena-bazhenova",
@@ -41,8 +45,8 @@ export const councilCandidates = [
     birthplace: "Russia (ES)",
     birthdate: "27/07/1984",
     bio: "Laureata in Lingue Straniere. Ha svolto attivita' di interpretariato in ambito commerciale per Materlux (sede di Mosca) ed e' stata insegnante di lingua russa presso Studium Srl (CEPU). Ha maturato esperienze di interpretariato e traduzione per Mengucci Industria del Legno di Agugliano, oltre a esperienze professionali al pubblico con responsabilita' di gestione e organizzazione.",
-    imageUrl: "/customassets/foto/vladena_bazhenova.png",
-    casellarioUrl: "/customassets/cg/Casellario Bazhenova.pdf",
+    imageUrl: foto("vladena_bazhenova.png"),
+    casellarioUrl: cg("Casellario Bazhenova.pdf"),
   },
   {
     slug: "maria-adele-berti",
@@ -51,8 +55,8 @@ export const councilCandidates = [
     birthplace: "Fratte Rosa (PU)",
     birthdate: "10/02/1961",
     bio: "Insegnante, ricercatrice e relatrice. E' stata sindaca per due mandati consecutivi, dal 1999 al 2009, nel Comune di Fratte Rosa. Ha ricoperto il ruolo di Consigliere della Comunita' Montana Catria e Cesano ed e' socio fondatore dell'Associazione Isabella Petrucci e di L.I.S (Laboratorio di Idee per la Sostenibilita'). Attualmente e' membro del CDA GAL Flaminia Cesano e Presidente Regionale CIM (Confederazione Italiani nel Mondo).",
-    imageUrl: "/customassets/foto/mariadele_berti.png",
-    casellarioUrl: "/customassets/cg/Casellario Berti.pdf",
+    imageUrl: foto("mariadele_berti.png"),
+    casellarioUrl: cg("Casellario Berti.pdf"),
   },
   {
     slug: "luis-enrique-bucci",
@@ -61,8 +65,8 @@ export const councilCandidates = [
     birthplace: "Trujillo (Peru' - ES)",
     birthdate: "06/06/1982",
     bio: "Padre di un bambino di nove anni, educatore professionale per la cooperativa COOSS Marche e maestro presso la scuola elementare Rita Levi Montalcini di Chiaravalle. Da anni e' volontario presso l'associazione Le Rondini di Senigallia.",
-    imageUrl: "/customassets/foto/lui_enrique_bucci.png",
-    casellarioUrl: "/customassets/cg/Casellario Bucci.pdf",
+    imageUrl: foto("lui_enrique_bucci.png"),
+    casellarioUrl: cg("Casellario Bucci.pdf"),
   },
   {
     slug: "adrian-catalani",
@@ -71,8 +75,8 @@ export const councilCandidates = [
     birthplace: "Colombia (ES)",
     birthdate: "04/04/1999",
     bio: "Giovane imprenditore del territorio.",
-    imageUrl: "/customassets/foto/adrian_catalani.png",
-    casellarioUrl: "/customassets/cg/Casellario Catalani.pdf",
+    imageUrl: foto("adrian_catalani.png"),
+    casellarioUrl: cg("Casellario Catalani.pdf"),
   },
   {
     slug: "giacomo-cuccaroni",
@@ -81,8 +85,8 @@ export const councilCandidates = [
     birthplace: "Ancona (AN)",
     birthdate: "19/09/1948",
     bio: "Medico cardiologo in congedo dopo aver svolto la propria attivita' presso l'ospedale cardiologico Lancisi di Ancona. Attualmente e' Presidente di Italia Viva Senigallia.",
-    imageUrl: "/customassets/foto/giacomo_cuccaroni.png",
-    casellarioUrl: "/customassets/cg/Casellario Cuccaroni.pdf",
+    imageUrl: foto("giacomo_cuccaroni.png"),
+    casellarioUrl: cg("Casellario Cuccaroni.pdf"),
   },
   {
     slug: "diego-dadderio",
@@ -91,8 +95,8 @@ export const councilCandidates = [
     birthplace: "Palata (CB)",
     birthdate: "16/07/1958",
     bio: "Avvocato prevalentemente in ambito civilistico. Amante di musica e sport, ha collaborato alla costituzione e, per alcuni anni, alla gestione della societa' sportiva di calcio giovanile Vigorina. Da alcuni anni e' volontario di Protezione Civile.",
-    imageUrl: "/customassets/foto/diego_d_addreio.png",
-    casellarioUrl: "/customassets/cg/Casellario D'Adderio.pdf",
+    imageUrl: foto("diego_d_addreio.png"),
+    casellarioUrl: cg("Casellario D'Adderio.pdf"),
   },
   {
     slug: "lucia-daleo",
@@ -101,8 +105,8 @@ export const councilCandidates = [
     birthplace: "Siracusa (SR)",
     birthdate: "28/04/1952",
     bio: "Laureata in Biologia e specializzata in Microbiologia, da quando e' in pensione si dedica interamente all'arte e alla scrittura. Affascinata da Van Gogh, dipinge fin da giovane. Dal 2012 ad oggi ha realizzato 19 mostre personali e 46 mostre collettive, vincendo diversi premi. Ha pubblicato quattro libri.",
-    imageUrl: "/customassets/foto/lucia_d_aleo.png",
-    casellarioUrl: "/customassets/cg/Casellario D'Aleo.pdf",
+    imageUrl: foto("lucia_d_aleo.png"),
+    casellarioUrl: cg("Casellario D'Aleo.pdf"),
   },
   {
     slug: "angelo-falcone",
@@ -111,8 +115,8 @@ export const councilCandidates = [
     birthplace: "Tivoli (Roma)",
     birthdate: "01/09/1971",
     bio: "Nato a Tivoli, si trasferisce a Senigallia nel 1981. Lavora nel mondo della carta dal 1995, prima alla Scam e dal 2021 presso Fiorini International. E' attualmente consigliere regionale UILFPC.",
-    imageUrl: "/customassets/foto/angelo_falcone.png",
-    casellarioUrl: "/customassets/cg/Casellario Falcone.pdf",
+    imageUrl: foto("angelo_falcone.png"),
+    casellarioUrl: cg("Casellario Falcone.pdf"),
   },
   {
     slug: "marco-fogante",
@@ -121,8 +125,8 @@ export const councilCandidates = [
     birthplace: "Pesaro (PU)",
     birthdate: "10/04/1989",
     bio: "Medico radiologo presso l'Azienda Ospedaliero-Universitaria delle Marche, con esperienza nella diagnostica avanzata, nell'emergenza-urgenza e nella ricerca scientifica. Autore di numerose pubblicazioni scientifiche, e' attivo in iniziative formative e culturali in ambito sanitario e sociale.",
-    imageUrl: "/customassets/foto/marco_fogante.png",
-    casellarioUrl: "/customassets/cg/Casellario Fogante.pdf",
+    imageUrl: foto("marco_fogante.png"),
+    casellarioUrl: cg("Casellario Fogante.pdf"),
   },
   {
     slug: "mauro-fratini",
@@ -131,8 +135,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "14/11/1960",
     bio: "Titolare di impresa. Tra le sue qualita' emergono la capacita' di ascolto e di lavoro in team.",
-    imageUrl: "/customassets/foto/mauro_fratini.png",
-    casellarioUrl: "/customassets/cg/Casellario Fratini.pdf",
+    imageUrl: foto("mauro_fratini.png"),
+    casellarioUrl: cg("Casellario Fratini.pdf"),
   },
   {
     slug: "michela-gambelli",
@@ -141,8 +145,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "14/01/1984",
     bio: "Giornalista, sensibile alle tematiche sociali, ha avuto esperienze nel sud del mondo. E' autrice di molte pubblicazioni, tra cui alcuni numeri dei Quaderni del Consiglio Regionale delle Marche. Ha collaborato per molti anni con Il Messaggero ed e' stata voce del giornale radio dell'emittente radiofonica diocesana. Gia' Presidente del Consiglio delle Donne, collabora con alcune associazioni culturali del territorio. Politicamente si e' formata alla PES Academy, Scuola dei Democratici e Socialisti Europei.",
-    imageUrl: "/customassets/foto/michela_gambelli.png",
-    casellarioUrl: "/customassets/cg/Casellario  Gambelli.pdf",
+    imageUrl: foto("michela_gambelli.png"),
+    casellarioUrl: cg("Casellario  Gambelli.pdf"),
   },
   {
     slug: "emanuele-genovese",
@@ -151,8 +155,8 @@ export const councilCandidates = [
     birthplace: "Palermo (PA)",
     birthdate: "30/05/1977",
     bio: "Laureato magistrale in Culture e Religione presso la Sapienza di Roma, e' docente dal 2010. Attualmente insegna presso il Liceo Classico Perticari.",
-    imageUrl: "/customassets/foto/emanuele_genovese.png",
-    casellarioUrl: "/customassets/cg/Casellario Genovese.pdf",
+    imageUrl: foto("emanuele_genovese.png"),
+    casellarioUrl: cg("Casellario Genovese.pdf"),
   },
   {
     slug: "rosaria-leonardi",
@@ -162,7 +166,7 @@ export const councilCandidates = [
     birthdate: "01/01/1945",
     bio: "Laureata in lettere classiche ed ex insegnante. Dopo essersi iscritta alla Comunita' MASCI, ne diventa Segretario Generale dal 2004 al 2010. Scrive per oltre un decennio per Voce Misena; svolge servizio presso la Scuola di Pace del Comune di Senigallia, attivando percorsi educativi quali il Consiglio Municipale dei Ragazzi, di cui assume poi la presidenza. Nel 2009 e nel 2012 partecipa alle missioni in Palestina con Flavio Lotti. E' socia fondatrice e presidente dell'Associazione di promozione sociale Amarantos Cerchio interculturale Donne per la Pace.",
     imageUrl: null,
-    casellarioUrl: "/customassets/cg/Casellario Leonardi.pdf",
+    casellarioUrl: cg("Casellario Leonardi.pdf"),
   },
   {
     slug: "andrea-liso",
@@ -171,8 +175,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "21/04/2003",
     bio: "Studente presso la Facolta' di Economia e Consulenza Finanziaria. E' stato segretario dei Giovani Democratici dal 2022 al 2024. Amante dello sport, in particolare del calcio, e' arbitro effettivo presso l'Associazione Italiana Arbitri.",
-    imageUrl: "/customassets/foto/andrea_liso.png",
-    casellarioUrl: "/customassets/cg/Casellario Liso.pdf",
+    imageUrl: foto("andrea_liso.png"),
+    casellarioUrl: cg("Casellario Liso.pdf"),
   },
   {
     slug: "mauro-mariotti",
@@ -181,8 +185,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "25/04/1988",
     bio: "Prima potatore e manutentore presso un frantoio, attualmente e' operaio presso un'azienda locale. Appassionato di musica, ha collaborato con diverse associazioni culturali e, con la sua band, ha pubblicato diversi lavori discografici e partecipato a quattro tour europei.",
-    imageUrl: "/customassets/foto/mauro_mariotti.png",
-    casellarioUrl: "/customassets/cg/Casellario Mariotti.pdf",
+    imageUrl: foto("mauro_mariotti.png"),
+    casellarioUrl: cg("Casellario Mariotti.pdf"),
   },
   {
     slug: "elsa-mattioni",
@@ -191,8 +195,8 @@ export const councilCandidates = [
     birthplace: "Castelnuovo Magra (SP)",
     birthdate: "28/03/1951",
     bio: "Laureata in Economia e Commercio presso l'Universita' degli Studi di Pisa. E' stata insegnante di ragioneria e tecnica commerciale fino ai primi anni '80. Funzionario presso gli Uffici della Ragioneria Provinciale nelle province di Como, Bologna e Pesaro dal 1984 al 2000. Cancelliere presso la Sezione Giurisdizionale della Corte dei Conti di Ancona dal 2000 al 2005. Dal 2005 al 2017 e' capo area Gestione Tributi presso l'Agenzia delle Dogane di Ancona ed eletta rappresentante del sindacato autonomo presso la stessa Agenzia. Oggi e' in pensione.",
-    imageUrl: "/customassets/foto/lisa_mattioni.png",
-    casellarioUrl: "/customassets/cg/Casellario Mattioni.pdf",
+    imageUrl: foto("lisa_mattioni.png"),
+    casellarioUrl: cg("Casellario Mattioni.pdf"),
   },
   {
     slug: "bledin-mollaj",
@@ -201,8 +205,8 @@ export const councilCandidates = [
     birthplace: "Lezhe (Albania - ES)",
     birthdate: "18/11/1977",
     bio: "Operaio.",
-    imageUrl: "/customassets/foto/bledin_mollag.png",
-    casellarioUrl: "/customassets/cg/Casellario Mollaj.pdf",
+    imageUrl: foto("bledin_mollag.png"),
+    casellarioUrl: cg("Casellario Mollaj.pdf"),
   },
   {
     slug: "michele-patrignani",
@@ -211,8 +215,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "29/04/1998",
     bio: "Laureato in Scienze Politiche, Sociali ed Internazionali all'Universita' di Bologna, ha concluso il corso magistrale Politica, Amministrazione e Organizzazione. Abbraccia il pensiero socialista e progressista, con particolare attenzione alle politiche giovanili e sociali.",
-    imageUrl: "/customassets/foto/michele_patrignani.png",
-    casellarioUrl: "/customassets/cg/Casellario Patrignani.pdf",
+    imageUrl: foto("michele_patrignani.png"),
+    casellarioUrl: cg("Casellario Patrignani.pdf"),
   },
   {
     slug: "tiziana-russo",
@@ -221,8 +225,8 @@ export const councilCandidates = [
     birthplace: "Napoli (NA)",
     birthdate: "07/11/1993",
     bio: "Diplomata come dirigente di comunita', attualmente disoccupata. Predisposta all'aiuto del prossimo e dei piu' deboli.",
-    imageUrl: "/customassets/foto/tiziana_russo.png",
-    casellarioUrl: "/customassets/cg/Casellario Russo.pdf",
+    imageUrl: foto("tiziana_russo.png"),
+    casellarioUrl: cg("Casellario Russo.pdf"),
   },
   {
     slug: "iorio-tombesi",
@@ -231,8 +235,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "18/07/1957",
     bio: "Ex gestore di campeggio, ha ricoperto il ruolo di Vice Presidente nazionale di Assocamping Confesercenti e dell'Azienda di Promozione Turistica di Senigallia. E' stato Presidente della Confesercenti Senigallia dal 1995 al 2010 e Consigliere dell'ex Irab di Senigallia per due mandati. E' volontario presso l'Associazione Stracomunitaria dal 2020 ed e' tesoriere dell'Associazione A. Bellanca di Senigallia.",
-    imageUrl: "/customassets/foto/iorio_tombesi.png",
-    casellarioUrl: "/customassets/cg/Casellario Tombesi.pdf",
+    imageUrl: foto("iorio_tombesi.png"),
+    casellarioUrl: cg("Casellario Tombesi.pdf"),
   },
   {
     slug: "giorgio-turchetti",
@@ -241,8 +245,8 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "11/05/1942",
     bio: "Laureato in Fisica a Bologna nel 1965, e' stato ricercatore presso l'Universita' di Bari e poi di Bologna, dove e' diventato professore associato e, dal 1987, ordinario di Fisica Matematica. Ricercatore attivo anche all'estero (CEA, CERN), ha operato nel settore dei sistemi complessi, compresa la mobilita' urbana. Ha coordinato progetti di ricerca italiani ed europei e organizzato convegni internazionali. Attualmente e' impegnato nella promozione della cultura scientifica attraverso incontri su temi di rilevanza sociale quali il cambiamento climatico e la transizione energetica.",
-    imageUrl: "/customassets/foto/giorgio_turchetti.png",
-    casellarioUrl: "/customassets/cg/Casellario Turchetti.pdf",
+    imageUrl: foto("giorgio_turchetti.png"),
+    casellarioUrl: cg("Casellario Turchetti.pdf"),
   },
   {
     slug: "giorgio-pablo-vallasciani",
@@ -251,8 +255,8 @@ export const councilCandidates = [
     birthplace: "Ancona (AN)",
     birthdate: "12/10/2003",
     bio: "Laureato in Filosofia e in Scienze e Tecniche Psicologiche, e' attualmente studente di Relazioni Internazionali. Da sempre interessato alla politica, e' coordinatore regionale di ORA! Umbria. Si riconosce in un approccio pragmatico e centrista.",
-    imageUrl: "/customassets/foto/giorgio_pablo_vallasciani.png",
-    casellarioUrl: "/customassets/cg/Casellario Vallasciani.pdf",
+    imageUrl: foto("giorgio_pablo_vallasciani.png"),
+    casellarioUrl: cg("Casellario Vallasciani.pdf"),
   },
 ];
 
