@@ -15,7 +15,6 @@ function Hero() {
             <p className="hero__subtitle">
               Elezioni amministrative &mdash; 24 e 25 maggio 2026
             </p>
-            <SocialLinks variant="hero" />
             <p className="hero__description">
               Progetto Senigallia Riformista e&apos; una lista civica a sostegno
               di Dario Romano sindaco. Uno spazio condiviso tra cittadini,
@@ -26,6 +25,7 @@ function Hero() {
               amministrazione, coinvolgendo giovani, accademici e realta&apos;
               associative per costruire una visione comune del futuro.
             </p>
+            <SocialLinks variant="hero" />
           </div>
 
           <div className="hero__logo-wrap">

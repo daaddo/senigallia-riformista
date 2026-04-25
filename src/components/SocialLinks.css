@@ -36,13 +36,20 @@
   display: block;
 }
 
-/* Hero (chiaro su blu) */
+/* Hero (chiaro su blu) — icone piu grandi */
 .social-links--hero {
-  margin-top: 28px;
+  margin-top: 0;
 }
 
 .social-links--hero .social-links__link {
   color: var(--color-white);
+  width: 52px;
+  height: 52px;
+}
+
+.social-links--hero .social-links__icon {
+  width: 28px;
+  height: 28px;
 }
 
 /* Footer (scuro) */
