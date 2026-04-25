@@ -135,7 +135,7 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "14/11/1960",
     bio: "Titolare di impresa. Tra le sue qualita' emergono la capacita' di ascolto e di lavoro in team.",
-    imageUrl: foto("mauro_fratini.png"),
+    imageUrl: foto("mauro_fratini1.png"),
     casellarioUrl: cg("Casellario Fratini.pdf"),
   },
   {

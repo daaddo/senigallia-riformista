@@ -1,15 +1,6 @@
 import { Link } from "react-router-dom";
+import listLogo from "../assets/logo-senigallia-riformista.png";
 import "./CandidateCard.css";
-
-function getInitials(name) {
-  if (!name) return "";
-  return name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0].toUpperCase())
-    .join("");
-}
 
 function CandidateCard({ slug, name, role, bio, imageUrl, priority = false }) {
   return (
@@ -18,7 +9,11 @@ function CandidateCard({ slug, name, role, bio, imageUrl, priority = false }) {
       className="candidate-card"
       aria-label={`Scopri il profilo di ${name}`}
     >
-      <div className="candidate-card__media">
+      <div
+        className={`candidate-card__media${
+          !imageUrl ? " candidate-card__media--default-logo" : ""
+        }`}
+      >
         {imageUrl ? (
           <img
             src={imageUrl}
@@ -28,16 +23,13 @@ function CandidateCard({ slug, name, role, bio, imageUrl, priority = false }) {
             fetchpriority={priority ? "high" : "auto"}
           />
         ) : (
-          <div
-            className="candidate-card__placeholder"
-            role="img"
-            aria-label={`Fotografia di ${name} non disponibile`}
-          >
-            <span className="candidate-card__initials">{getInitials(name)}</span>
-            <span className="candidate-card__placeholder-label">
-              Foto in arrivo
-            </span>
-          </div>
+          <img
+            src={listLogo}
+            alt={`Logo Progetto Senigallia Riformista (fotografia di ${name} in arrivo)`}
+            className="candidate-card__photo candidate-card__logo"
+            loading={priority ? "eager" : "lazy"}
+            fetchpriority={priority ? "high" : "auto"}
+          />
         )}
       </div>
 

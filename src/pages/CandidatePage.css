@@ -84,36 +84,21 @@
   display: block;
 }
 
-.candidate-page__placeholder {
-  width: 100%;
-  min-height: 320px;
+.candidate-page__media--default-logo {
+  background: rgba(255, 255, 255, 0.95);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  background: linear-gradient(
-    160deg,
-    var(--color-purple) 0%,
-    var(--color-magenta) 100%
-  );
-  color: var(--color-white);
+  padding: 28px 24px;
+  min-height: 280px;
 }
 
-.candidate-page__initials {
-  font-size: 3.5rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  line-height: 1;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-}
-
-.candidate-page__placeholder-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  opacity: 0.9;
-  font-weight: 600;
+.candidate-page__logo {
+  width: auto;
+  max-width: 240px;
+  max-height: 320px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .candidate-page__intro {

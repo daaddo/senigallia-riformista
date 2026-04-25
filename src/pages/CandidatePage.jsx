@@ -1,18 +1,9 @@
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getCandidateBySlug } from "../data/candidates.js";
+import listLogo from "../assets/logo-senigallia-riformista.png";
 import NotFoundPage from "./NotFoundPage.jsx";
 import "./CandidatePage.css";
-
-function getInitials(name) {
-  if (!name) return "";
-  return name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0].toUpperCase())
-    .join("");
-}
 
 function openCasellario(casellarioUrl) {
   window.open(encodeURI(casellarioUrl), "_blank", "noopener,noreferrer");
@@ -49,7 +40,13 @@ function CandidatePage() {
           </nav>
 
           <div className="candidate-page__hero-grid">
-            <div className="candidate-page__media">
+            <div
+              className={`candidate-page__media${
+                !candidate.imageUrl
+                  ? " candidate-page__media--default-logo"
+                  : ""
+              }`}
+            >
               {candidate.imageUrl ? (
                 <img
                   src={candidate.imageUrl}
@@ -57,18 +54,11 @@ function CandidatePage() {
                   className="candidate-page__photo"
                 />
               ) : (
-                <div
-                  className="candidate-page__placeholder"
-                  role="img"
-                  aria-label={`Fotografia di ${candidate.name} non disponibile`}
-                >
-                  <span className="candidate-page__initials">
-                    {getInitials(candidate.name)}
-                  </span>
-                  <span className="candidate-page__placeholder-label">
-                    Foto in arrivo
-                  </span>
-                </div>
+                <img
+                  src={listLogo}
+                  alt={`Logo Progetto Senigallia Riformista (fotografia di ${candidate.name} in arrivo)`}
+                  className="candidate-page__photo candidate-page__logo"
+                />
               )}
             </div>
 
