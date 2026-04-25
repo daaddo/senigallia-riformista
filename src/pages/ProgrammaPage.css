@@ -1,14 +1,55 @@
 .programma-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--header-height));
-  height: calc(100dvh - var(--header-height));
-  background-color: var(--color-bg);
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  background-color: #525252;
+  width: 100%;
 }
 
-.programma-page__viewer {
+.programma-page__doc {
   flex: 1 1 0;
-  width: 100%;
-  border: none;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding: 8px 4px 24px;
+}
+
+.programma-page__document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.programma-page__page {
+  max-width: 100%;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.programma-page__page .react-pdf__Page {
   display: block;
+}
+
+.programma-page__page .react-pdf__Page__canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.programma-page__loading,
+.programma-page__error {
+  margin: 0;
+  padding: 16px 20px;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 0.9375rem;
+}
+
+.programma-page__error {
+  background-color: rgba(0, 0, 0, 0.25);
 }

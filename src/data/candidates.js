@@ -25,7 +25,7 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "01/02/1966",
     bio: "Programmatore elettronico di macchine tessili in primarie aziende del settore. Recentemente e' attivo nel settore metalmeccanico. Ha maturato esperienze come guardia giurata e come guardia parco, oltre al volontariato nei vigili del fuoco.",
-    imageUrl: foto("maurizio_angeloni_baldoni.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario Angeloni Baldoni.pdf"),
   },
   {
@@ -55,7 +55,7 @@ export const councilCandidates = [
     birthplace: "Fratte Rosa (PU)",
     birthdate: "10/02/1961",
     bio: "Insegnante, ricercatrice e relatrice. E' stata sindaca per due mandati consecutivi, dal 1999 al 2009, nel Comune di Fratte Rosa. Ha ricoperto il ruolo di Consigliere della Comunita' Montana Catria e Cesano ed e' socio fondatore dell'Associazione Isabella Petrucci e di L.I.S (Laboratorio di Idee per la Sostenibilita'). Attualmente e' membro del CDA GAL Flaminia Cesano e Presidente Regionale CIM (Confederazione Italiani nel Mondo).",
-    imageUrl: foto("mariadele_berti.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario Berti.pdf"),
   },
   {
@@ -105,7 +105,7 @@ export const councilCandidates = [
     birthplace: "Siracusa (SR)",
     birthdate: "28/04/1952",
     bio: "Laureata in Biologia e specializzata in Microbiologia, da quando e' in pensione si dedica interamente all'arte e alla scrittura. Affascinata da Van Gogh, dipinge fin da giovane. Dal 2012 ad oggi ha realizzato 19 mostre personali e 46 mostre collettive, vincendo diversi premi. Ha pubblicato quattro libri.",
-    imageUrl: foto("lucia_d_aleo.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario D'Aleo.pdf"),
   },
   {
@@ -175,7 +175,7 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "21/04/2003",
     bio: "Studente presso la Facolta' di Economia e Consulenza Finanziaria. E' stato segretario dei Giovani Democratici dal 2022 al 2024. Amante dello sport, in particolare del calcio, e' arbitro effettivo presso l'Associazione Italiana Arbitri.",
-    imageUrl: foto("andrea_liso.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario Liso.pdf"),
   },
   {
@@ -205,7 +205,7 @@ export const councilCandidates = [
     birthplace: "Lezhe (Albania - ES)",
     birthdate: "18/11/1977",
     bio: "Operaio.",
-    imageUrl: foto("bledin_mollag.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario Mollaj.pdf"),
   },
   {
@@ -245,7 +245,7 @@ export const councilCandidates = [
     birthplace: "Senigallia (AN)",
     birthdate: "11/05/1942",
     bio: "Laureato in Fisica a Bologna nel 1965, e' stato ricercatore presso l'Universita' di Bari e poi di Bologna, dove e' diventato professore associato e, dal 1987, ordinario di Fisica Matematica. Ricercatore attivo anche all'estero (CEA, CERN), ha operato nel settore dei sistemi complessi, compresa la mobilita' urbana. Ha coordinato progetti di ricerca italiani ed europei e organizzato convegni internazionali. Attualmente e' impegnato nella promozione della cultura scientifica attraverso incontri su temi di rilevanza sociale quali il cambiamento climatico e la transizione energetica.",
-    imageUrl: foto("giorgio_turchetti.png"),
+    imageUrl: null,
     casellarioUrl: cg("Casellario Turchetti.pdf"),
   },
   {
