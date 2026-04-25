@@ -12,6 +12,7 @@ function Hero() {
             <h1 id="hero-title" className="hero__title">
               Senigallia Riformista
             </h1>
+            <p className="hero__mayor">Dario Romano Sindaco</p>
             <p className="hero__subtitle">
               Elezioni amministrative &mdash; 24 e 25 maggio 2026
             </p>
