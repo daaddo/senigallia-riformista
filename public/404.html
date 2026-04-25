@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Progetto Senigallia Riformista</title>
+    <script>
+      // Redirect SPA per GitHub Pages.
+      // Codifica il percorso richiesto come query string e rimanda a index.html
+      // che lo reinterpreta via history.replaceState.
+      var l = window.location;
+      var segmentsToKeep = 1; // numero di segmenti del base path (nome repo)
+      l.replace(
+        l.protocol +
+          '//' +
+          l.host +
+          l.pathname.split('/').slice(0, 1 + segmentsToKeep).join('/') +
+          '/?p=/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(segmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search
+            ? '&q=' + l.search.slice(1).replace(/&/g, '~and~')
+            : '') +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
