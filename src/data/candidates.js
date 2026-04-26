@@ -83,7 +83,7 @@ export const councilCandidates = [
     role: "Candidata Consigliera",
     birthplace: "Russia (ES)",
     birthdate: "27/07/1984",
-    bio: "Laureata in Lingue Straniere. Ha svolto attivita' di interpretariato in ambito commerciale per Materlux (sede di Mosca) ed e' stata insegnante di lingua russa presso Studium Srl (CEPU). Ha maturato esperienze di interpretariato e traduzione per Mengucci Industria del Legno di Agugliano, oltre a esperienze professionali al pubblico con responsabilita' di gestione e organizzazione.",
+    bio: "Laureata in Lingue Straniere. Ha svolto attivita' di interpretariato in ambito commerciale per Materlux (sede di Mosca) ed e' stata insegnante di lingua russa presso Studium Srl (CEPU). Ha maturato esperienze di interpretariato e traduzione per Mengucci Industria del Legno di Agugliano, oltre a esperienze professionali al pubblico con responsabilita' di gestione e organizzazione. ",
     imageUrl: foto("vladena_bazhenova.png"),
     casellarioUrl: cg("Casellario Bazhenova.pdf"),
   },
