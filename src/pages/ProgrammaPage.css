@@ -8,12 +8,7 @@
 }
 
 .programma-page__doc {
-  flex: 1 1 0;
-  min-height: 0;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
-  padding: 8px 4px 24px;
+  padding: 8px 4px 56px;
 }
 
 .programma-page__document {
