@@ -64,7 +64,7 @@ export const councilCandidates = [
     birthplace: "Pesaro (PU)",
     birthdate: "10/04/1989",
     bio: "Medico radiologo presso l'Azienda Ospedaliero-Universitaria delle Marche, con esperienza nella diagnostica avanzata, nell'emergenza-urgenza e nella ricerca scientifica. Autore di numerose pubblicazioni scientifiche, e' attivo in iniziative formative e culturali in ambito sanitario e sociale.",
-    imageUrl: foto("marco_fogante.png"),
+    imageUrl: foto("marco_fogante.jpeg"),
     casellarioUrl: cg("Casellario Fogante.pdf"),
   },
   {
