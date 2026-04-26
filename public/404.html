@@ -8,7 +8,7 @@
       // Codifica il percorso richiesto come query string e rimanda a index.html
       // che lo reinterpreta via history.replaceState.
       var l = window.location;
-      var segmentsToKeep = 1; // numero di segmenti del base path (nome repo)
+      var segmentsToKeep = 0; // numero di segmenti del base path (0 per dominio custom)
       l.replace(
         l.protocol +
           '//' +
